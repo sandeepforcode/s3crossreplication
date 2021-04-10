@@ -6,7 +6,3 @@ variable "env" {
     default = "dev"
 }
 
-
-locals {
-    
-}
