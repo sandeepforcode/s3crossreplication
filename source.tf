@@ -45,7 +45,11 @@ resource "aws_iam_policy" "s3replication" {
     {
       "Action": [
         "s3:GetReplicationConfiguration",
-        "s3:ListBucket"
+        "s3:ListBucket",
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+
       ],
       "Effect": "Allow",
       "Resource": [
