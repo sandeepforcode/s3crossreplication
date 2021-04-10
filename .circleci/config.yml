@@ -58,7 +58,7 @@ jobs:
           command: |
             terraform apply -auto-approve tfdestroy
 workflows:
-  version: 1
+  version: 2
   plan_approve_apply:
     jobs:
       - plan-apply
