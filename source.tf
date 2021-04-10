@@ -7,7 +7,7 @@ resource "aws_kms_key" "srckey" {
 
 resource "aws_kms_alias" "src"  {
     provider      = aws.source
-    name          = "alias/src"
+    name          = "alias/srckey"
     target_key_id = aws_kms_key.srckey.key_id
 }
 

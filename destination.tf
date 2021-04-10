@@ -6,7 +6,7 @@ resource "aws_kms_key" "destkey" {
 
 resource "aws_kms_alias" "dest"  {
     provider      = aws.destination
-    name          = "alias/dest"
+    name          = "alias/destkey"
     target_key_id = aws_kms_key.destkey.key_id
 }
 
